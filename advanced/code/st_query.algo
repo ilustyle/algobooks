@@ -1,0 +1,19 @@
+﻿// [left, right]: 현재 방문하는 노드의 구간
+// [a, b]: 합을 구하는 구간
+// idx: 현재 방문하는 노드 번호
+
+int query(int left, int right, int idx, int a, int b)
+{
+	// 노드 구간[left, right]이 [a, b]와 전혀 겹치지 않는 경우
+	if(b < left || a > right) return 0;
+
+	// 노드 구간[left, right]이 [a, b] 구간에 모두 포함되는 경우
+	if(a <= left && right <= b) return tree[idx];
+
+	// 그 외의 경우
+	int mid = (left + right) / 2;
+	int l = query(left, mid, idx * 2, a, b);
+	int r = query(mid + 1, right, idx * 2 + 1, a, b);
+
+	return l + r;
+}

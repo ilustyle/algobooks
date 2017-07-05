@@ -1,0 +1,10 @@
+﻿//  p[]: 트리 저장
+Make-Set( x )
+    p[x] ← x
+
+Find-Set( x )           // x 가 속한 집합의 대표자 얻기
+    if  x = p[x] then return x
+    else return Find-Set( p[x] )
+
+Union( x, y )           // x, y 가 속한 집합을 합친다.
+    p[ Find-Set( y ) ] ← Find-Set( x )  

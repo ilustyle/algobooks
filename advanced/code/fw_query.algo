@@ -1,0 +1,14 @@
+﻿// 구간 [1, a] 합
+int query(int a)
+{
+	int sum = 0;
+	for(;a > 0; a -= LSB(a))
+		sum += fw[a];
+	return sum;
+}
+
+// 구간 [a, b]
+int queryRange(int a, int b)
+{
+	return query(b) - query(a - 1);
+}

@@ -1,0 +1,22 @@
+﻿// 구간 갱신 [a, b]에 +val 하기
+void updateRange(int l, int r, int idx, int a, int b, int val)
+{
+	if (lazy[idx] != 0) return;
+
+	if (l > b || a > r) return;
+	if (a <= l && r <= b)
+	{
+		tree[idx] += val*(r - l + 1);
+		if (l != r)
+		{
+			lazy[idx * 2] += val;
+			lazy[idx * 2 + 1] += val;
+		}
+		return;
+	}
+	int mid = (l + r) / 2;
+	int L = idx * 2, R = L + 1;
+	updateRange(l, mid, L, a, b, val);
+	updateRange(mid + 1, r, idx * 2 + 1, a, b, val);
+	tree[idx] = tree[L] + tree[R];
+}

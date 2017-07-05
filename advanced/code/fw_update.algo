@@ -1,0 +1,12 @@
+﻿int arr[N + 1] = {0, 3, 9, 4, 2, 7, 8, 10, 1};
+int fw[N + 1];
+// p: point, v: value
+inline int LSB(int x)
+{
+	return x & -x;
+}
+void updatePoint(int p, int v)
+{
+	for(;p <= N; p += LSB(p))
+		fw[p] += v;
+}

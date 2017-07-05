@@ -1,0 +1,18 @@
+﻿// 갱신하기 arr[p]에 +val 하기
+// ST[]: 구간 트리
+
+int updatePoint(int left, int right, int idx, int p, int val)
+{
+	if(p < left || p > right) return tree[idx];
+
+	ST[idx] += val;
+
+	if(left != right)
+	{
+		int mid = (left + right) / 2;
+		int l = updatePoint(left, mid, idx * 2, p, val);
+		int r = updatePoint(mid + 1, right, idx * 2 + 1, p, val);
+		ST[idx] = l + r;
+	}
+	return tree[idx];
+}

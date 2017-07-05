@@ -1,0 +1,10 @@
+﻿// tree[N]: 트리를 저장하는 1차 배열, N은 노드 수
+// 1 ~ N까지 노드 번호 사용
+
+void traversal(int idx)
+{
+    if(idx > N) return;
+    
+    traversal(idx * 2);    
+    traversal(idx * 2 + 1);
+}
