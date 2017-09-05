@@ -1,42 +1,28 @@
-﻿.. 알고 코딩 마스터 파일, created by SPHINX
-   written by JongYun, Jung
-   
- 
-=================================
-알고 코딩
-=================================
+﻿================================
+강의 자료들
+================================
 
+목차
+===============================
 
-.. admonition:: 알고리즘을 알고 코딩 하자
-
-    - 알고리즘과 관련한 내용을 정리중. . .
-   
-..
-  
 .. toctree::   
-    :maxdepth: 1  
-    :titlesonly:
-    :caption: ADVANCED
-
-    advanced/disjoint_set
-    advanced/segment
-    advanced/fenwick  
-    advanced/hash 
-
-
+   :maxdepth: 1  
+   :titlesonly:   
    
-----
+   brute/index   
+   graph/index
+   backtrack/index
+   dp/index   
+   tree/index
+   string/index
+   etc/index   
 
-* :ref:`genindex`   
+참고
+---------------------------------
 
+강의 내용은  `algocoding.net <http://www.algocoding.net>`_ 에 정리중입니다.
    
-Indices and tables
-======================
-
-..    
-    * :ref:`genindex`
-    * :ref:`search`
-
+   
 ..
     .. disqus::
         :disqus_identifier: master_page
