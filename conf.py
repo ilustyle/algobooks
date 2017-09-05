@@ -42,8 +42,7 @@ extensions = [
     'sphinx.ext.ifconfig',    
     'sphinx.ext.githubpages',	
 	'sphinx.ext.doctest',    
-	#'rst2pdf.pdfbuilder',
-    'sphinxcontrib.disqus',			# disqus 추가 -----------------------		
+	#'rst2pdf.pdfbuilder',   
 ]
 
 # Add any paths that contain templates here, relative to this directory.
