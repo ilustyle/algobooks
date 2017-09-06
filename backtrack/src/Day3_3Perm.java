@@ -1,17 +1,15 @@
-package Day03;
-import java.util.*;
+import java.util.Scanner;
 
-public class Day3_3Perm {
-
-	static int N = 13;
+public class Day3_3Perm0 {
+	static int N = 11;
 	static int min;
+	static int sx, sy, ex, ey;
 	static int[] x = new int[N];
 	static int[] y = new int[N];
 	static int[] order = new int[N];
 	
-	static int calcDist(int from, int to){
-		int dist = (x[from] - x[to]) > 0 ? x[from] - x[to] : x[to] - x[from];
-		dist += (y[from] - y[to]) > 0 ? y[from] - y[to] : y[to] - y[from];
+	static int calcDist(int x1, int y1, int x2, int y2){
+		int dist = Math.abs(x1 - x2) + Math.abs(y1 - y2);
 		return dist;
 	}
 	
@@ -19,22 +17,24 @@ public class Day3_3Perm {
 	{
 		if (dist >= min) return;
 		
-		if (k == N - 1){ // ¸ğµç ¼±ÅÃÀÌ ³¡³².
+		if (k == N){ // ëª¨ë“  ì„ íƒì´ ëë‚¨.
 			
-			dist += calcDist(order[k - 1], N - 1);
+			dist += calcDist(x[order[k-1]], y[order[k-1]], ex, ey);
 			
 			if (dist < min) 
 				min = dist;			
 			
 		}else{
 			
-			for (int i = 1; i <= 11; i++){
+			for (int i = 0; i < N; i++){
 				
-				if ((visit & (1 << i)) != 0) continue;
-				
+				if ((visit & (1 << i)) != 0) continue;				
 				order[k] = i;
+				int add;
+				if(k == 0) add = calcDist(sx, sy, x[i], y[i]);
+				else add = calcDist(x[order[k-1]], y[order[k-1]], x[i], y[i]);
 				
-				findPath(k + 1, dist + calcDist(order[k - 1], order[k]), visit | (1 << i));
+				findPath(k + 1, dist + add, visit | (1 << i));
 			}
 		}
 	}
@@ -44,21 +44,18 @@ public class Day3_3Perm {
 		
 		while(T-- > 0)
 		{
-			x[0] = sc.nextInt(); y[0] = sc.nextInt(); 
-			x[12] = sc.nextInt();y[12] = sc.nextInt();
+			sx = sc.nextInt(); sy = sc.nextInt(); 
+			ex = sc.nextInt(); ey = sc.nextInt();
 			
-			order[0] = 0;  order[12] = 12;
-
-			for (int i = 1; i <= 11; i++) {
+			for (int i = 0; i < N; i++) {
 				x[i] = sc.nextInt();
 				y[i] = sc.nextInt();
 			}
 			
 			min = 0xffffff;
-			findPath(1, 0, 0);
+			findPath(0, 0, 0);
 			System.out.println(min);		
 		}
 		sc.close();
 	}
-	
 }

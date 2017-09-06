@@ -1,22 +1,18 @@
-package Day03;
-
 import java.util.*;
 
 public class Day3_2 {
 
-	static int N;		// »ç¶÷¼ö
-	static int M = 4;		// ¹æ¼ö	
-	static int[][] G;	// °ü°è Á¤º¸
-	static int[] room;	// ¹æ¹øÈ£ ÀúÀå
-	static int min;		// ÃÖ¼Ò ¹æ¼ö
-	static boolean[] used = new boolean[M + 1];
-	// Áßº¹ ¼ø¿­·Î
-	
-	static boolean isPossible(int k, int n) // k¹ø »ç¶÷¿¡°Ô n¹ø ¹æ ¹èÁ¤ÀÌ °¡´ÉÇÑ°¡?
+	static int N;		// ì‚¬ëŒìˆ˜
+	static int M = 4;	// ë°©ìˆ˜	
+	static int[][] G;	// ê´€ê³„ ì •ë³´
+	static int[] person;	// ë°©ë²ˆí˜¸ ì €ì¥
+	static int min;		// ìµœì†Œ ë°©ìˆ˜
+	static int[] room = new int[M + 1];
+	// ì¤‘ë³µ ìˆœì—´ë¡œ
+	static boolean isPossible(int k, int n) // kë²ˆ ì‚¬ëŒì—ê²Œ në²ˆ ë°© ë°°ì •ì´ ê°€ëŠ¥í•œê°€?
 	{
-		for(int i = 0; i < k; i++)
-		{
-			if(room[i] == n && G[k][i] == 1)
+		for(int i = 0; i < k; i++) {
+			if(person[i] == n && G[k][i] == 1)
 				return false;
 		}
 		return true;
@@ -25,29 +21,32 @@ public class Day3_2 {
 	{
 		if(cnt >= min) return;
 		if(k == N){
-			if(cnt < min) min = cnt;
-			for(int i = 0; i < N; i++) System.out.printf("%d ", room[i]);
-			System.out.println();
+			if(cnt < min) {
+				min = cnt;			
+				for(int i = 0; i < N; i++) System.out.printf("%d ", person[i]);
+				System.out.println();
+				for(int i = 0; i < M; i++) System.out.println("ë£¸"+i+": " + room[i]);
+			}
 			return;
 		}
 		for(int i = 0; i < M; i++)
 		{
 			if(!isPossible(k, i)) continue;
-			room[k] = i;
-			if(used[i] == false) {
-				used[i] =  true;
-				solve(k + 1, cnt + 1);
-				used[i] = false;
-			}else{
-				solve(k + 1, cnt);
-			}
+			person[k] = i;
+			
+			int add = 0;
+			if(room[i] == 0) add++;
+			room[i]++;
+			solve(k + 1, cnt + add);			
+			room[i]--;
+			
 		}
 	}
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);		
 		N = sc.nextInt();
 		G = new int[N][N];
-		room = new int[N];
+		person = new int[N];
 		
 		for(int i = 0; i < N; i++)
 		{
