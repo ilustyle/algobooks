@@ -40,8 +40,8 @@
         - `중복 순열(재귀) <https://github.com/JongYunJung/algobooks/blob/master/backtrack/src/Day3_2.java>`_
         
     #. 모든 정점 경유 최단 거리
-        - `순열 생성 + 가지치기 <https://github.com/JongYunJung/algobooks/blob/master/backtrack/src/Day3_3perm.java>`_
-        - `순열 생성 + 인접 행렬 <https://github.com/JongYunJung/algobooks/blob/master/backtrack/src/Day3_3perm2.java>`_
+        - `순열 생성 + 가지치기 <https://github.com/JongYunJung/algobooks/blob/master/backtrack/src/Day3_3Perm.java>`_
+        - `순열 생성 + 인접 행렬 <https://github.com/JongYunJung/algobooks/blob/master/backtrack/src/Day3_3Perm2.java>`_
         - `BIT 표현을 이용한 DP <https://github.com/JongYunJung/algobooks/blob/master/backtrack/src/Day3_3DP.java>`_
         
 
