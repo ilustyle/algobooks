@@ -14,7 +14,7 @@
     
     #. `힙(Heap) <https://github.com/JongYunJung/algobooks/blob/master/tree/src/Heap.java>`_        
 
-    #. `인덱스 트리(Index Tree) <https://github.com/JongYunJung/algobooks/blob/master/tree/src/IndexTree.java>`_        
+    #. `인덱스 트리(Index Tree) <https://github.com/JongYunJung/algobooks/blob/master/tree/src/IndexTreeDemo.java>`_        
     
     #. `구간 트리(Segement Tree) <https://github.com/JongYunJung/algobooks/blob/master/tree/src/SegmentTree.java>`_        
 
