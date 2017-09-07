@@ -21,7 +21,7 @@
          
             
     #. `공통 부분 문자열 <https://www.acmicpc.net/problem/5582>`_ 
-        
+        - `JAVA 예제 <https://github.com/JongYunJung/algobooks/blob/master/dp/src/BOJ5582.java>`_
         
     #. `키순서 <https://www.acmicpc.net/problem/2458>`_ 
         - 플로이드-워샬 || `JAVA 예제 <https://github.com/JongYunJung/algobooks/blob/master/dp/src/BOJ2458_floyd.java>`_
