@@ -1,5 +1,5 @@
 package Day05;
-// ±¸°£ÇÕ ±¸ÇÏ±â1 https://www.acmicpc.net/problem/2042
+// êµ¬ê°„í•© êµ¬í•˜ê¸°1 https://www.acmicpc.net/problem/2042
 // 10999
 import java.util.*;
 
@@ -81,7 +81,7 @@ public class SegmentTree {
 	}
 	public static void main(String[] args) 
 	{
-		//System.out.println("±¸°£ Æ®¸®....lazy propagation....");
+		//System.out.println("êµ¬ê°„ íŠ¸ë¦¬....lazy propagation....");
 		Scanner sc = new Scanner(System.in);
 
 		N = sc.nextInt();

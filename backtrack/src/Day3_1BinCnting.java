@@ -1,13 +1,13 @@
 package Day03;
 import java.util.*;
 
-// ¹ÙÀÌ³Ê¸® Ä«¿îÆÃÀ¸·Î ¸ğµç ºÎºĞ ÁıÇÕ »ı¼º
+// ë°”ì´ë„ˆë¦¬ ì¹´ìš´íŒ…ìœ¼ë¡œ ëª¨ë“  ë¶€ë¶„ ì§‘í•© ìƒì„±
 public class Day3_1BinCnting {
 	
-	static int[] cost;		// º´¿ø °Ç¼³ ºñ¿ë
-	static int[] subset;	// ÀÎÁ¢ Á¤Á¡µéÀÇ ÁıÇÕ(ÀÚ±â ÀÚ½Åµµ Æ÷ÇÔ)
-	static int U; 			// ÀüÃ¼ Á¤Á¡ ÁıÇÕ
-	static int N;			// ¸¶À» ¼ö
+	static int[] cost;		// ë³‘ì› ê±´ì„¤ ë¹„ìš©
+	static int[] subset;	// ì¸ì ‘ ì •ì ë“¤ì˜ ì§‘í•©(ìê¸° ìì‹ ë„ í¬í•¨)
+	static int U; 			// ì „ì²´ ì •ì  ì§‘í•©
+	static int N;			// ë§ˆì„ ìˆ˜
 	
 	public static void main(String[] args)
 	{
@@ -23,7 +23,7 @@ public class Day3_1BinCnting {
 		for(int i = 0; i < N; i++)
 		{
 			U |= (1 << i);
-			subset[i] |= (1 << i);		// ÀÚ±â ÀÚ½Å Æ÷ÇÔ
+			subset[i] |= (1 << i);		// ìê¸° ìì‹  í¬í•¨
 			for(int j = 0; j < N; j++)
 			{
 				int t = sc.nextInt();
@@ -41,8 +41,8 @@ public class Day3_1BinCnting {
 			{
 				if((i & (1 << j)) != 0)	
 				{
-					set |= subset[j];	// jÁ¤Á¡ÀÇ ÀÎÁ¢Á¤Á¡ ÁıÇÕÀ» ÇÕÇÑ´Ù.
-					sum += cost[j];		// jÁ¤Á¡ÀÇ ºñ¿ëÀ» ´õÇÑ´Ù.
+					set |= subset[j];	// jì •ì ì˜ ì¸ì ‘ì •ì  ì§‘í•©ì„ í•©í•œë‹¤.
+					sum += cost[j];		// jì •ì ì˜ ë¹„ìš©ì„ ë”í•œë‹¤.
 				}
 			}
 			

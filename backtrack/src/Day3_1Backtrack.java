@@ -2,22 +2,22 @@ package Day03;
 
 import java.util.*;
 
-// ¹éÆ®·¡Å·À¸·Î Ç®±â
+// ë°±íŠ¸ë˜í‚¹ìœ¼ë¡œ í’€ê¸°
 public class Day3_1Backtrack {
-	static int[] cost;		// º´¿ø °Ç¼³ ºñ¿ë
-	static int[] subset;	// ÀÎÁ¢ Á¤Á¡µéÀÇ ÁıÇÕ(ÀÚ±â ÀÚ½Åµµ Æ÷ÇÔ)
-	static int U; 			// ÀüÃ¼ Á¤Á¡ ÁıÇÕ
-	static int N;			// ¸¶À» ¼ö
-	static int min;			// ÃÖ¼Ò ºñ¿ë
+	static int[] cost;		// ë³‘ì› ê±´ì„¤ ë¹„ìš©
+	static int[] subset;	// ì¸ì ‘ ì •ì ë“¤ì˜ ì§‘í•©(ìê¸° ìì‹ ë„ í¬í•¨)
+	static int U; 			// ì „ì²´ ì •ì  ì§‘í•©
+	static int N;			// ë§ˆì„ ìˆ˜
+	static int min;			// ìµœì†Œ ë¹„ìš©
 	
-	// sum: ÇöÀç±îÁö ºñ¿ë, set: Ä¿¹öÇÏ´Â ¸¶À» Á¤º¸
+	// sum: í˜„ì¬ê¹Œì§€ ë¹„ìš©, set: ì»¤ë²„í•˜ëŠ” ë§ˆì„ ì •ë³´
 	static void solve(int k, int sum, int set)
 	{
 		if (sum >= min) return;
 		if (set == U && sum < min)
 		{
 			min = sum;
-			System.out.printf("ºñ¿ë = %d\n", min);
+			System.out.printf("ë¹„ìš© = %d\n", min);
 			return;
 		}
 		if (k == N)	return;
@@ -39,7 +39,7 @@ public class Day3_1Backtrack {
 		for(int i = 0; i < N; i++)
 		{
 			U |= (1 << i);
-			subset[i] |= (1 << i);		// ÀÚ±â ÀÚ½Å Æ÷ÇÔ
+			subset[i] |= (1 << i);		// ìê¸° ìì‹  í¬í•¨
 			for(int j = 0; j < N; j++)
 			{
 				int t = sc.nextInt();
