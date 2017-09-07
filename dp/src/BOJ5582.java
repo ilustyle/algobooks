@@ -10,8 +10,8 @@ public class Main {
 	    Scanner sc = new Scanner(System.in);
 	    String x = sc.next();
 	    String y = sc.next();
-        int m = x.length();
-        int n = y.length();
+	    int m = x.length();
+		int n = y.length();
 		int max = 0;
 		
 		for (int i = 1; i <= m; ++i)
