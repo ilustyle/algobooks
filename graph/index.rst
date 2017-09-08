@@ -14,7 +14,7 @@
     #. `Disjoint-Set <https://github.com/JongYunJung/algobooks/blob/master/graph/src/DisjointSetDemo.java>`_
     
     #. 위상 정렬
-        - `진입 차수 <https://github.com/JongYunJung/algobooks/blob/master/graph/src/SortDegreeDemo.java>`_
+        - `진입 차수 <https://github.com/JongYunJung/algobooks/blob/master/graph/src/TopoSortDegreeDemo.java>`_
         - `DFS 활용 <https://github.com/JongYunJung/algobooks/blob/master/graph/src/TopoSortDFSDemo.java>`_
     
     #. 최소 신장 트리
