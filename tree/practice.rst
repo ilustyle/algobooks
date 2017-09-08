@@ -6,7 +6,7 @@
 목록
 ========================================
 
-   #. `트리 순회 <https://www.acmicpc.net/problem/1991>`_ 
+    #. `트리 순회 <https://www.acmicpc.net/problem/1991>`_ 
         - `JAVA 예제 <https://github.com/JongYunJung/algobooks/blob/master/tree/src/BOJ1991.java>`_
         
     #. `트리의 높이와 너비 <https://www.acmicpc.net/problem/2250>`_
@@ -23,7 +23,7 @@
     
     #. `구간합 구하기 <https://www.acmicpc.net/problem/2042>`_
         - `JAVA 예제 <https://github.com/JongYunJung/algobooks/blob/master/tree/src/BOJ2042.java>`_
-    
+
     
         
 ..
