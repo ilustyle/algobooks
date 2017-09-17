@@ -6,7 +6,7 @@ public class BabyJGinDemo {
 	
 	static boolean ByGreedy(int[] arr)
 	{
-		int[] cnt = new int[10];	// Ä«µå ¼ıÀÚ ¼¼±â
+		int[] cnt = new int[10];	// ì¹´ë“œ ìˆ«ì ì„¸ê¸°
 		for(int i = 0; i < 6; i++)
 			cnt[arr[i]]++;
 
@@ -44,17 +44,17 @@ public class BabyJGinDemo {
 	}
 	static boolean ByCombination(int[] arr)
 	{
-		Arrays.sort(arr);			// Á¤·ÄÇØ¼­ ¼ø¼­´ë·Î ¼±ÅÃÇÏ±â		
+		Arrays.sort(arr);			// ì •ë ¬í•´ì„œ ìˆœì„œëŒ€ë¡œ ì„ íƒí•˜ê¸°		
 		for(int i = 0; i < 6; i++)
 		for(int j = i + 1; j < 6; j++)
 		for(int k = j + 1; k < 6; k++)
 		{
-			// i, j, k Á¶»ç
+			// i, j, k ì¡°ì‚¬
 			int run = 0, tri = 0;
 			if(arr[i] + 1 == arr[j] && arr[j] + 1 == arr[k]) run++;			
 			if(arr[i] == arr[j] && arr[j] == arr[k]) tri++;
 			
-			// ³ª¸ÓÁö ¼ıÀÚµé Á¶»ç
+			// ë‚˜ë¨¸ì§€ ìˆ«ìë“¤ ì¡°ì‚¬
 			int[] A = new int[3];
 			int idx = 0;
 			for(int n = 0; n < 6; n++)

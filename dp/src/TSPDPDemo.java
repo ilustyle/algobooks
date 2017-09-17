@@ -6,8 +6,7 @@ public class TSPDPDemo {
 	static int[] y = new int[N];
 	static int[][] G = new int[N][N];
 	static int[][] dp = new int[1 << N][N];
-	static void calcDistance(){
-		
+	static void calcDistance(){		
 		for(int i = 0; i < N -1; i++)
 		{
 			for(int j = i + 1; j < N; j++)
@@ -24,7 +23,6 @@ public class TSPDPDemo {
 		int T = sc.nextInt();
 		while(T-- > 0)
 		{
-			// ½ÃÀÛÁ¡°ú µµÂøÁ¡
 			x[0] = sc.nextInt(); y[0] = sc.nextInt();
 			x[12] = sc.nextInt(); y[12] = sc.nextInt();
 			
@@ -42,17 +40,17 @@ public class TSPDPDemo {
 			
 			dp[1][0] = 0;
 			
-			for (int visit = 1; visit < (1 << n); visit++) // visit: ¹æ¹®ÇÑ Á¤Á¡µéÀÇ ÁýÇÕ
+			for (int visit = 1; visit < (1 << n); visit++) // visit: ë°©ë¬¸í•œ ì •ì  ì§‘í•©
 			{
-				for (int last = 0; last < n; last++)		// last: ¸¶Áö¸· ¹æ¹® Á¤Á¡
+				for (int last = 0; last < n; last++)		// last: ë§ˆì§€ë§‰ ë°©ë¬¸ ì •ì 
 				{
-					if ((visit & (1 << last)) == 0) continue; // 1¹ø ¹æ¹®ÇÏÁö ¾ÊÀº °æ¿ì Á¦¿Ü
+					if ((visit & (1 << last)) == 0) continue; // ë§ˆì§€ë§‰ ì •ì  í¬í•¨ ì—¬ë¶€
 					
-					int prev = visit - (1 << last); 		 // ¸¶Áö¸· ¹æ¹® Á¤Á¡À» Á¦¿Ü
+					int prev = visit - (1 << last); 		 // ë§ˆì§€ë§‰ ì •ì  ì œê±°
 					
-					for (int v = 0; v < n; v++)				 // prev ÁýÇÕÀÇ ¸¶Áö¸· ¹æ¹® Á¤Á¡µé¿¡ ´ëÇØ
+					for (int v = 0; v < n; v++)				 // prev 
 					{
-						if (G[v][last]==0 || (prev & (1 << v)) == 0) // °£¼±ÀÌ ¾ø°Å³ª, ºñ¹æ¹® Á¤Á¡ Á¦¿Ü 
+						if (G[v][last]==0 || (prev & (1 << v)) == 0) //  
 							continue;
 						
 						dp[visit][last] = Math.min(dp[visit][last], dp[prev][v] + G[v][last]);
