@@ -11,8 +11,8 @@ public class SubsetRecur {
 			System.out.println();
 			return;
 		}
-		bits[k] = 1; Subset(k + 1);	// k¹øÂ° ¿ä¼Ò Æ÷ÇÔ
-		bits[k] = 0; Subset(k + 1);	// k¹øÂ° ¿ä¼Ò ¹ÌÆ÷ÇÔ
+		bits[k] = 1; Subset(k + 1);	// kë²ˆì§¸ ìš”ì†Œ í¬í•¨
+		bits[k] = 0; Subset(k + 1);	// kë²ˆì§¸ ìš”ì†Œ ë¯¸í¬í•¨
 	}
 	public static void main(String[] args) {		
 		Subset(0);

@@ -1,17 +1,17 @@
 public class Counting {
 	
 	static int[] A = new int[]{5, 1, 3, 3, 3, 2, 1, 5, 1};
-	static int[] B = new int[A.length];
-	static int[] cnt = new int[6]; 
+	static int[] B = new int[A.length];		// ì •ë ¬ëœ ìë£Œë“¤ ì €ì¥
+	static int[] cnt = new int[6]; 			// ë¹ˆë„ìˆ˜ ì €ì¥
 	static void CountingSort()
 	{
-		for(int i = 0; i < A.length; i++) // ºóµµ¼ö °è»ê
+		for(int i = 0; i < A.length; i++) // ë¹ˆë„ìˆ˜ ê³„ì‚°
 			cnt[A[i]]++;
 		
-		for(int i = 1; i <= 5; i++)		// ´©Àû ºóµµ¼ö °è»ê 
+		for(int i = 1; i <= 5; i++)		// ëˆ„ì  ë¹ˆë„ìˆ˜ ê³„ì‚° 
 			cnt[i] += cnt[i - 1];
 		
-		for(int i = A.length - 1; i >= 0; i--)	// A[] -> B[]·Î ¿Å±â±â
+		for(int i = A.length - 1; i >= 0; i--)	// A[] -> B[]ë¡œ ì˜®ê¸°ê¸°
 		{
 			cnt[A[i]]--;
 			B[cnt[A[i]]] = A[i];

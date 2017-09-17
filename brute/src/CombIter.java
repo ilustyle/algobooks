@@ -1,23 +1,19 @@
 
 public class CombIter {
 	static int[] arr = {10, 20, 30};	
-	static int N = arr.length;
-	static int[] pick = new int[N]; // ªÃ¿∫ ø‰º“µÈ¿« ¿Œµ¶Ω∫
+	static int N = arr.length;	
 	
-	static void Comb(int k, int r, int start){
-		if(k == r){
-			for(int i = 0; i < r; i++)
-				System.out.printf(arr[pick[i]] + " ");
-			System.out.println();
-			return;
-		}
-		for(int i = start; i < N; i++)
+	static void Comb(){
+		
+		for(int i = 0; i < N - 1; i++)
 		{
-			pick[k] = i;
-			comb(k + 1, r, i + 1);
+			for(int j = 0; j < N; j++)
+			{
+				System.out.printf("%d %d\n", arr[i], arr[j]);
+			}
 		}
 	}
 	public static void main(String[] args) {		
-		Comb(0, 2, 0);
+		Comb();
 	}
 }

@@ -2,9 +2,9 @@
 public class PermRecur2 {
 	static int[] arr = {10, 20, 30};
 	static int N = arr.length;
-	static int[] order = new int[N];		// ¿ä¼ÒµéÀÇ ÀÎµ¦½º	
+	static int[] order = new int[N];		// ìš”ì†Œë“¤ì˜ ìˆœì„œ	
 	
-	static void perm(int k, int used){		// used: ÀÌ¹Ì ¼±ÅÃµÈ ¿ä¼Òµé
+	static void perm(int k, int used){		// used: ì´ë¯¸ ì„ íƒëœ ìš”ì†Œë“¤
 		if(k == N){
 			for(int i = 0; i < N; i++)
 				System.out.print(arr[order[i]] + " ");

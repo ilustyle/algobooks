@@ -2,7 +2,7 @@
 public class CombRecur {
 	static int[] arr = {10, 20, 30};	
 	static int N = arr.length;
-	static int[] pick = new int[N]; // ªÃ¿∫ ø‰º“µÈ¿« ¿Œµ¶Ω∫
+	static int[] pick = new int[N]; //
 	
 	static void Comb(int k, int r, int start){
 		if(k == r){

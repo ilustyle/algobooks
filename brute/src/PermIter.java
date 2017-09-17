@@ -4,7 +4,7 @@ public class PermIter {
 	static int N = arr.length;
 	
 	static void Perm(){
-		// 3°³ÀÇ for¹®À» ÁßÃ¸
+		// 3ê°œì˜ forë¬¸ ì¤‘ì²©
 		for(int i = 0; i < N; i++){
 			for(int j = 0; j < N; j++){
 				if(i == j) continue;

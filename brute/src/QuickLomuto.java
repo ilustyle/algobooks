@@ -6,7 +6,7 @@ public class QuickLomuto {
 	static void swap(int i, int j){
 		int t = arr[i]; arr[i] = arr[j]; arr[j] = t;
 	}			
-	static void Quick(int lo, int hi)	// Lomuto ºĞÇÒ ¾Ë°í¸®Áò »ç¿ë
+	static void Quick(int lo, int hi)	// Lomuto ë¶„í•  ì•Œê³ ë¦¬ì¦˜ ì ìš©
 	{
 		if(lo < hi){
 			

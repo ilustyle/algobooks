@@ -15,7 +15,7 @@
         - `퀵정렬(Lomuto partition) <https://github.com/algocoding/lecture/blob/master/brute/src/QuickLomuto.java>`_
         
     #. `Baby_gin <https://github.com/algocoding/lecture/blob/master/brute/src/BabyGinDemo.java>`_
-
+ 
     #. 3개 요소들의 부분 집합 생성
         - `바이너리 카운팅 <https://github.com/algocoding/lecture/blob/master/brute/src/BinaryCnt.java>`_
         - `for문 중첩 <https://github.com/algocoding/lecture/blob/master/brute/src/SubsetIter.java>`_

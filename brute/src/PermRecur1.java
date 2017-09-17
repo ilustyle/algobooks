@@ -2,8 +2,8 @@
 public class PermRecur1 {
 	static int[] arr = {10, 20, 30};
 	static int N = arr.length;
-	static int[] order = new int[N];		// ¿ä¼ÒµéÀÇ ÀÎµ¦½º
-	static boolean[] used = new boolean[N];// Áö±İ±îÁö ¼±ÅÃµÈ ¿ä¼Òµé
+	static int[] order = new int[N];		// ìš”ì†Œë“¤ì˜ ì¸ë±ìŠ¤
+	static boolean[] used = new boolean[N];	// ì´ë¯¸ ì„ íƒëœ ìš”ì†Œë“¤
 	
 	static void perm(int k){
 		if(k == N){
