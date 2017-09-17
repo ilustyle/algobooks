@@ -3,11 +3,11 @@ public class BinaryCnt {
 	static int[] arr = {10, 20, 30};
 	static int N = arr.length;
 		
-	// ¹ÙÀÌ³ÊÆ¼ Ä«¿îÆÃÀ¸·Î ºÎºĞ ÁıÇÕ »ı¼ºÇÏ±â
+	// ë°”ì´ë„ˆë¦¬ ì¹´ìš´íŒ…ìœ¼ë¡œ ë¶€ë¶„ì§‘í•© ìƒì„±í•˜ê¸°
 	static void Subset(){		
 		for(int i = 0; i < (1 << N) ; i++){
 			
-			for(int j = 0; j < N; j++){		// ºñÆ® Ç¥Çö Ãâ·Â
+			for(int j = 0; j < N; j++){		// iì— ì €ì¥ëœ jê°œ í•˜ìœ„ ë¹„íŠ¸ í™•ì¸
 				if((i & (1 << j)) != 0) System.out.print(1);
 				else System.out.print(0);							
 			}
