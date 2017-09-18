@@ -17,9 +17,9 @@
         - `재귀 + 메모 <https://github.com/algocoding/lecture/blob/master/dp/src/KnapsackRecurMemo.java>`_
         - `반복 <https://github.com/algocoding/lecture/blob/master/dp/src/KnapsackIter.java>`_
         
-    #. `행렬 경로 문제 <https://github.com/algocoding/lecture/blob/master/dp/src/MatrixPathDemo.java>`_    
-        - 재귀 + 메모
-        - 재귀+ 반복
+    #. 행렬 경로 문제    
+        - `재귀 + 메모  <https://github.com/algocoding/lecture/blob/master/dp/src/MatrixPathRecurMemo.java>`_
+        - `반복 <https://github.com/algocoding/lecture/blob/master/dp/src/MatrixPathIter.java>`_
         
     #. `Floyd-Warshall <https://github.com/algocoding/lecture/blob/master/dp/src/FloydWarshallDemo.java>`_
         
