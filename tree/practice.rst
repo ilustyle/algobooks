@@ -18,13 +18,12 @@
         - 무향 그래프 형태로 저장해서 1번(루트)를 시작점으로 너비우선 탐색을 수행해서 정점들의 부모를 찾는다.
         - `JAVA 예제 <https://github.com/JongYunJung/algobooks/blob/master/tree/src/BOJ11437.java>`_
     
-    #. `집합의 표현 <https://www.acmicpc.net/problem/1717>`_
-        - `JAVA 예제 <https://github.com/JongYunJung/algobooks/blob/master/tree/src/BOJ1717.java>`_
-    
     #. `구간합 구하기 <https://www.acmicpc.net/problem/2042>`_
-        - `JAVA 예제 <https://github.com/JongYunJung/algobooks/blob/master/tree/src/BOJ2042.java>`_
+        - `구간트리 JAVA 예제 <https://github.com/JongYunJung/algobooks/blob/master/tree/src/BOJ2042.java>`_
 
-    
+    #. `구간 최소값  <https://www.acmicpc.net/problem/10868>`_
+        - `인덱스 트리 JAVA 예제 <https://github.com/JongYunJung/algobooks/blob/master/tree/src/BOJ10868Index.java>`_
+        - `구가 트리 JAVA 예제 <https://github.com/JongYunJung/algobooks/blob/master/tree/src/BOJ10868Segment.java>`_
         
 ..
     .. disqus::
