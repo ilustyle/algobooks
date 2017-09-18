@@ -3,6 +3,7 @@ package Day04;
 public class CoinChangeDemo {
 	static int[] coin = new int[]{1, 4, 6};
 	
+	// 재귀
 	public static int coinChange(int money)
 	{
 		if(money == 0) return 0;
@@ -18,6 +19,7 @@ public class CoinChangeDemo {
 		}
 		return min + 1;
 	}
+	// 재귀 + 메모
 	static int[] memo = new int[1000];
 	public static int coinChange_memo(int money)
 	{ 
@@ -36,6 +38,7 @@ public class CoinChangeDemo {
 		System.out.printf("memo[%d] = %2d\n", money, min + 1);
 		return memo[money] = min + 1;
 	}
+	// 반복
 	public static int coinChange_iter(int money)
 	{ 
 		memo[0] = 0;

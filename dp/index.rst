@@ -5,21 +5,29 @@
 예제 코드
 ========================================
 
-    #. `피보나치 수 <https://github.com/JongYunJung/algobooks/blob/master/dp/src/FibonacciDemo.java>`_
-    
-    #. `동전 교환 <https://github.com/JongYunJung/algobooks/blob/master/dp/src/CoinChangeDemo.java>`_
-    
-    #. `배낭 문제 <https://github.com/JongYunJung/algobooks/blob/master/dp/src/KnapsackDemo.java>`_
-    
-    #. `행렬 경로 문제 <https://github.com/JongYunJung/algobooks/blob/master/dp/src/MatrixPathDemo.java>`_    
-    
-    #. `Floyd-Warshall <https://github.com/JongYunJung/algobooks/blob/master/dp/src/FloydWarshallDemo.java>`_
-    
-    #. `TSP + DP <https://github.com/JongYunJung/algobooks/blob/master/dp/src/TSPDPDemo.java>`_
-        - Day3 백트래킹 모든 정점 경유 최단 거리 문제
-        
-    #. `이항 계수 <https://github.com/JongYunJung/algobooks/blob/master/dp/src/BinomialDemo.java>`_
+    #. `피보나치 수 <https://github.com/algocoding/lecture/blob/master/dp/src/FibonacciDemo.java>`_
 
+    #. 동전 교환
+        - `재귀  <https://github.com/algocoding/lecture/blob/master/dp/src/CoinChangeRecur.java>`_
+        - `재귀 + 메모  <https://github.com/algocoding/lecture/blob/master/dp/src/CoinChangeRecurMemo.java>`_
+        - `반복  <https://github.com/algocoding/lecture/blob/master/dp/src/CoinChangeIter.java>`_
+        
+    #. 배낭 문제 
+        - `재귀 <https://github.com/algocoding/lecture/blob/master/dp/src/KnapsackRecur.java>`_
+        - `재귀 + 메모 <https://github.com/algocoding/lecture/blob/master/dp/src/KnapsackRecurMemo.java>`_
+        - `반복 <https://github.com/algocoding/lecture/blob/master/dp/src/KnapsackIter.java>`_
+        
+    #. `행렬 경로 문제 <https://github.com/algocoding/lecture/blob/master/dp/src/MatrixPathDemo.java>`_    
+        - 재귀 + 메모
+        - 재귀+ 반복
+        
+    #. `Floyd-Warshall <https://github.com/algocoding/lecture/blob/master/dp/src/FloydWarshallDemo.java>`_
+        
+    #. `TSP + DP <https://github.com/algocoding/lecture/blob/master/dp/src/TSPDPDemo.java>`_
+        - Day3 백트래킹 모든 정점 경유 최단 거리 문제
+    
+    #. `이항 계수 <https://github.com/algocoding/lecture/blob/master/dp/src/BinomialDemo.java>`_
+    
     
 ----------
 
