@@ -27,7 +27,7 @@
         - `BFS + 인접행렬 <https://github.com/JongYunJung/algobooks/blob/master/graph/src/ShortestPathBFSMatrix.java>`_
         - `BFS + 인접리스트(ArrayList) <https://github.com/JongYunJung/algobooks/blob/master/graph/src/ShortestPathBFSArrayList.java>`_
         - `DFS + 인접리스트 <https://github.com/JongYunJung/algobooks/blob/master/graph/src/ShortestPathDFS.java>`_
-        - Dijkstra + 배열
+        - `Dijkstra + 배열 <https://github.com/JongYunJung/algobooks/blob/master/graph/src/ShortestPathDijkstraArr.java>`_
         - `Dijkstra + 우선순위큐 <https://github.com/JongYunJung/algobooks/blob/master/graph/src/ShortestPathDijkstra.java>`_
 
     #. `싸이클 판정 <https://github.com/JongYunJung/algobooks/blob/master/graph/src/Cycle.java>`_
