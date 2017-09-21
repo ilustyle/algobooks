@@ -9,9 +9,8 @@
         - `JAVA 예제 <https://github.com/JongYunJung/algobooks/blob/master/graph/src/BOJ1260.java>`_
     
     #. `미로 탐색  <https://www.acmicpc.net/problem/2178>`_ 
-        - BFS
-        - `JAVA BFS <https://github.com/JongYunJung/algobooks/blob/master/graph/src/BOJ2178_bfs.java>`_ || 
-        `JAVA DFS <https://github.com/JongYunJung/algobooks/blob/master/graph/src/BOJ2178_dfs.java>`_
+        - BFS, `JAVA 예제 <https://github.com/JongYunJung/algobooks/blob/master/graph/src/BOJ2178_bfs.java>`_ || 
+        - DFS, `JAVA 예제 <https://github.com/JongYunJung/algobooks/blob/master/graph/src/BOJ2178_dfs.java>`_
     
     #. `네트워크 연결 <https://www.acmicpc.net/problem/1922>`_ 
         - 최소 신장 트리
