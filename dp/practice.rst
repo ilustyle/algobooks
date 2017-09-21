@@ -29,4 +29,5 @@
 
     #. `외판원 순회 <https://www.acmicpc.net/problem/2098>`_         
         - 비트 마스크를 활용한 메모이제이션    
-    
+        - 재귀 `JAVA 예제 <https://github.com/JongYunJung/algobooks/blob/master/dp/src/BOJ2098_memo.java>`_
+        - 반복 `JAVA 예제 <https://github.com/JongYunJung/algobooks/blob/master/dp/src/BOJ2098_iter.java>`_
