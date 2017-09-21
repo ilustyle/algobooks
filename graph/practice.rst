@@ -9,7 +9,7 @@
         - `JAVA 예제 <https://github.com/JongYunJung/algobooks/blob/master/graph/src/BOJ1260.java>`_
     
     #. `미로 탐색  <https://www.acmicpc.net/problem/2178>`_ 
-        - BFS, `JAVA 예제 <https://github.com/JongYunJung/algobooks/blob/master/graph/src/BOJ2178_bfs.java>`_ || 
+        - BFS, `JAVA 예제 <https://github.com/JongYunJung/algobooks/blob/master/graph/src/BOJ2178_bfs.java>`_  
         - DFS, `JAVA 예제 <https://github.com/JongYunJung/algobooks/blob/master/graph/src/BOJ2178_dfs.java>`_
     
     #. `네트워크 연결 <https://www.acmicpc.net/problem/1922>`_ 
@@ -17,7 +17,7 @@
         - `JAVA 예제 <https://github.com/JongYunJung/algobooks/blob/master/graph/src/BOJ1922.java>`_
         
     #. `최단 경로  <https://www.acmicpc.net/problem/1753>`_ 
-        - DFS, BFS, Dijstra
+        - DFS, BFS, Dijkstra
         - `JAVA 예제 <https://github.com/JongYunJung/algobooks/blob/master/graph/src/BOJ1753.java>`_
             
     #. `줄세우기 <https://www.acmicpc.net/problem/2252>`_  
