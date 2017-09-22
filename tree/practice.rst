@@ -19,7 +19,8 @@
         - `JAVA 예제 <https://github.com/JongYunJung/algobooks/blob/master/tree/src/BOJ11437.java>`_
     
     #. `구간합 구하기 <https://www.acmicpc.net/problem/2042>`_
-        - `구간트리 JAVA 예제 <https://github.com/JongYunJung/algobooks/blob/master/tree/src/BOJ2042.java>`_
+        - `인덱스 JAVA 예제 <https://github.com/JongYunJung/algobooks/blob/master/tree/src/BOJ2042Index.java>`_
+        - `구간트리 JAVA 예제 <https://github.com/JongYunJung/algobooks/blob/master/tree/src/BOJ2042.java>`_        
 
     #. `구간 최소값  <https://www.acmicpc.net/problem/10868>`_
         - `인덱스 트리 JAVA 예제 <https://github.com/JongYunJung/algobooks/blob/master/tree/src/BOJ10868Index.java>`_

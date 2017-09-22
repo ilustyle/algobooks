@@ -1,9 +1,8 @@
-﻿// 구간합 구하기 https://www.acmicpc.net/problem/2042
+﻿// 구간합 구하기1 https://www.acmicpc.net/problem/2042
 
 import java.util.*;
 
 public class Main {
-
 	static long[] arr = new long[1000010];
 	static long[] st = new long[1 << 21 + 1];
 	static long[] lt = new long[1 << 21 + 1];;
@@ -18,23 +17,9 @@ public class Main {
 		
 		return st[id] = buildTree(id * 2, l, m) + buildTree(id * 2 + 1, m + 1, r);
 	}
-	public static void lazy_propagation(int id, int l, int r)
-	{
-		if(lt[id] != 0)
-		{
-			st[id] += (r - l + 1) *lt[id];
-			if(l != r)
-			{
-				lt[id*2] += lt[id];
-				lt[id*2 + 1] += lt[id];
-			}
-			lt[id] = 0;
-		}
-	}
+
 	public static long query(int id, int l, int r, int i, int j)
 	{
-		//lazy_propagation(id, l, r);
-		
 		if(r < i || j < l) return 0;
 		
 		if(i <= l && r <= j)  return st[id];
@@ -53,33 +38,9 @@ public class Main {
 				update(id * 2, l, m, p, v);
 				update(id * 2 + 1, m + 1, r, p, v);
 		}
-	}
-	public static void updateRange(int id, int l, int r, int i, int j, int v)
-	{
-		if(r < i || j < l) return;
-		
-		lazy_propagation(id, l, r);
-		
-		if(i <= l && r <= j){
-			st[id] += (r - l + 1) * v;
-			if(l != r)
-			{
-				lt[id*2] += v;
-				lt[id*2 + 1] += v;
-			}
-			return;
-		}
-		
-		
-		int m = (l + r) / 2;		
-		updateRange(id * 2, l, m, i, j, v);
-		updateRange(id * 2 + 1, m + 1, r, i, j, v);
-		
-		st[id] = st[id*2] + st[id*2+1];
-	}
+	}	
 	public static void main(String[] args) 
 	{
-		//System.out.println("구간 트리....lazy propagation....");
 		Scanner sc = new Scanner(System.in);
 
 		N = sc.nextInt();
@@ -90,8 +51,7 @@ public class Main {
 		for(int i = 0; i < N; i++)
 			arr[i] = sc.nextInt();
 		
-		buildTree(1, 0, N - 1);
-		//int a, b, c, d;
+		buildTree(1, 0, N - 1);		
 		int a, b, c;
 		for(int i = 0; i < M; i++)
 		{
@@ -99,18 +59,15 @@ public class Main {
 			b = sc.nextInt();
 			c = sc.nextInt();
 			
-			if(a == 1)
+			if(a == 1) 
 			{
-				//d = sc.nextInt();
 				b--;
 				update(1, 0, N - 1, b, (int)(c - arr[b]));
 				arr[b] = c;
-				//updateRange(1, 0, N - 1, b - 1, c - 1, d);
 			}else{
 				System.out.println(query(1, 0, N - 1, b - 1, c - 1));
 			}
 		}
 		sc.close();
 	}
-
 }
