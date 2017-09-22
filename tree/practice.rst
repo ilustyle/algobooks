@@ -23,7 +23,7 @@
 
     #. `구간 최소값  <https://www.acmicpc.net/problem/10868>`_
         - `인덱스 트리 JAVA 예제 <https://github.com/JongYunJung/algobooks/blob/master/tree/src/BOJ10868Index.java>`_
-        - `구간 트리 JAVA 예제 <https://github.com/JongYunJung/algobooks/blob/master/tree/src/BOJ10868Segement.java>`_
+        - `구간 트리 JAVA 예제 <https://github.com/JongYunJung/algobooks/blob/master/tree/src/BOJ10868Segment.java>`_
         
 ..
     .. disqus::
