@@ -1,4 +1,6 @@
-﻿import java.util.*;
+﻿// 단어정렬 https://www.acmicpc.net/problem/1181
+
+import java.util.*;
 
 public class BOJ1181 {
 	static String[] strs;

@@ -1,4 +1,5 @@
-﻿import java.util.*;
+﻿// 소트인사이드 https://www.acmicpc.net/problem/1427
+import java.util.*;
 
 public class BOJ1427 {
 
