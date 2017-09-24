@@ -11,7 +11,9 @@
         - `BFS + 배열로 구현한 큐 <https://github.com/JongYunJung/algobooks/blob/master/graph/src/BFSDemo.java>`_
         - `BFS + 라이브러리 큐 사용 <https://github.com/JongYunJung/algobooks/blob/master/graph/src/BFSWithLibraryDemo.java>`_
         
-    #. `Disjoint-Set <https://github.com/JongYunJung/algobooks/blob/master/graph/src/DisjointSetDemo.java>`_
+    #. Disjoint-Set
+        - `기본 연산 구현 <https://github.com/algocoding/lecture/blob/master/graph/src/DisjointSetSimple.java>`_
+        - `경로 압축, 랭크에 의한 union <https://github.com/algocoding/lecture/blob/master/graph/src/DisjointSetDemo.java>`_
     
     #. 위상 정렬
         - `진입 차수 <https://github.com/JongYunJung/algobooks/blob/master/graph/src/TopoSortDegreeDemo.java>`_
